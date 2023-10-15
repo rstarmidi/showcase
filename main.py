@@ -35,7 +35,7 @@ with col3:
         st.write(row['description'])
         image = Image.open(f"images/{row['image']}")
         st.image(image)
-        st.write(f"[See App]({row['url']})")
+        st.write(f"[Source Code]({row['url']})")
 
 with col4:
     for index, row in data[10:].iterrows():
@@ -43,4 +43,4 @@ with col4:
         st.write(row['description'])
         image = Image.open(f"images/{row['image']}")
         st.image(image)
-        st.write(f"[See App]({row['url']})")
+        st.write(f"[Source Code]({row['url']})")
